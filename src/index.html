@@ -1,66 +1,56 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto&family=Space+Grotesk&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css" />
-    <title>Ticket Generator</title>
-  </head>
-  <body>
-    <section class="desk1">
-      <div class="hero">
-        <div class="texts">
-          <div class="title">
-            <h1>
-              gere seu ticket e compartilhe<br />
-              com o mundo
-            </h1>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Space+Grotesk&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>Ticket Generator</title>
+</head>
+
+<body>
+  <section class="desk1">
+    <div class="hero">
+      <div class="texts">
+        <div class="title">
+          <h1>
+            gere seu ticket e compartilhe
+            com o mundo
+          </h1>
+        </div>
+        <div class="sub-title">
+          <h2>Digite seu usuário do GitHub</h2>
+        </div>
+        <div class="username">
+          <div class="logo-git">
+            <img src="./assets/logo-github.png" alt="logo-github" class="logo-git-img" />
           </div>
-          <div class="sub-title">
-            <h2>Digite seu usuário do GitHub</h2>
-          </div>
-          <div class="username">
-            <div class="logo-git">
-              <img
-                src="./assets/logo-github.png"
-                alt="logo-github"
-                class="logo-git-img"
-              />
-            </div>
-            <div>
-              <p>Nome de usuário</p>
-            </div>
-          </div>
-          <button class="ticket-generator">
-            <h3>Gerar meu ticket</h3>
-          </button>
+          <input placeholder="Nome de usuário" />
         </div>
 
-        <div class="panel">
-          <div class="panel1">
-            <div class="panel-info">
-              <img
-                src="./assets/img-cover.png"
-                alt="img-cover"
-                class="info1-img"
-              />
-            </div>
-            <div class="panel-info-2">
-              <img
-                src="./assets/infos-user.png"
-                alt="infos-user"
-                class="info2-img"
-              />
-            </div>
+        <span hidden >Usuário inválido. Verifique e tente novamente.</span>
+        <button class="ticket-generator">
+          <h3>Gerar meu ticket</h3>
+        </button>
+      </div>
+
+      <div class="panel">
+        <div class="panel1">
+          <div class="panel-info">
+            <img src="./assets/img-cover.png" alt="img-cover" class="info1-img" />
+          </div>
+          <div class="panel-info-2">
+            <img src="./assets/infos-user.png" alt="infos-user" class="info2-img" />
           </div>
         </div>
       </div>
-    </section>
-  </body>
+    </div>
+  </section>
+
+  <script src="./js/main.js"></script>
+</body>
+
 </html>
